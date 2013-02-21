@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<markers name="Agricultural Observations Bulletin for Victoria" date="27/05/2012" time="11:15">
+  <marker station="Corryong">
+    <maxtempt>10.8</maxtempt>
+    <mintempt>2.6</mintempt>
+    <rainto9am>1.2</rainto9am>
+    <windrun>36</windrun>
+  </marker>
+  <marker station="East Sale">
+    <maxtempt>14.4</maxtempt>
+    <mintempt>7.6</mintempt>
+    <rainto9am>0.0</rainto9am>
+    <windrun>323</windrun>
+    <sunshine>6.3</sunshine>
+  </marker>
+  <marker station="Kyabram">
+    <maxtempt>16.2</maxtempt>
+    <mintempt>5.4</mintempt>
+    <rainto9am>0.0</rainto9am>
+  </marker>
+  <marker station="Lake Dartmouth">
+    <maxtempt>10.5</maxtempt>
+    <mintempt>6.0</mintempt>
+    <rainto9am>1.0</rainto9am>
+    <windrun>13</windrun>
+  </marker>
+  <marker station="Lake Eildon">
+    <maxtempt>13.0</maxtempt>
+    <mintempt>4.6</mintempt>
+    <rainto9am>6.8</rainto9am>
+    <windrun>6</windrun>
+    <sunshine>0.3</sunshine>
+  </marker>
+  <marker station="Melbourne">
+    <maxtempt>16.1</maxtempt>
+    <mintempt>10.1</mintempt>
+    <rainto9am>7.0</rainto9am>
+  </marker>
+  <marker station="Melbourne Airport">
+    <maxtempt>15.9</maxtempt>
+    <mintempt>8.5</mintempt>
+    <rainto9am>0.6</rainto9am>
+    <windrun>263</windrun>
+    <sunshine>3.2</sunshine>
+  </marker>
+  <marker station="Mildura ">
+    <maxtempt>17.7</maxtempt>
+    <mintempt>7.4</mintempt>
+    <rainto9am>1.0</rainto9am>
+    <windrun>154</windrun>
+    <sunshine>3.7</sunshine>
+  </marker>
+  <marker station="Strathbogie">
+    <maxtempt>11.2</maxtempt>
+    <mintempt>4.9</mintempt>
+    <rainto9am>1.4</rainto9am>
+    <windrun>58</windrun>
+  </marker>
+  <marker station="Tatura">
+    <maxtempt>15.5</maxtempt>
+    <mintempt>6.6</mintempt>
+    <rainto9am>0.0</rainto9am>
+  </marker>
+  <marker station="Walpeup RS">
+    <maxtempt>17.1</maxtempt>
+    <mintempt>3.8</mintempt>
+    <rainto9am>0.2</rainto9am>
+  </marker>
+</markers>

@@ -1,0 +1,84 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Google Maps JavaScript API</title>
+    <link rel="stylesheet" href="css/weatherMap.css" />
+    <script src="javascript/xhr.js" type="text/javascript"></script>    
+	<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=AIzaSyBtkG0kQ4a1U5qiBrGYeEf9rJZO-hm5fVE"
+      type="text/javascript"></script>
+     
+   
+    <script type="text/javascript">
+	var State = "Victoria";
+	function setState(aState)
+	{
+		State = aState;
+		//alert(State);
+	}
+	
+	function loadMapLocation(station, MaxTempt, MinTempt, RainTo9am, Windrun, Shunshine)
+	{
+		var location = station + " " + State;
+		var markerInfo = new Array(MaxTempt, MinTempt, RainTo9am ,Windrun, Shunshine);
+		var mapTag = document.getElementById("map");
+		mapTag.style.display = "block";
+		//alert(markerInfo);
+		
+		addMarker(location, markerInfo);	//from javascript/mashup.js
+	}
+	</script>
+     <script src="javascript/map.js" type="text/javascript"></script>
+	<script src="javascript/ServerTransform.js" type="text/javascript"></script>
+    <script src="javascript/ClientTransform.js" type="text/javascript"></script>
+    
+  </head>
+  <body onLoad="load()" onUnload="GUnload()">
+  
+  	<div><h1>Agriculture Weather Map</h1></div>
+  	
+    <table width="100%" border="1">
+    <tr valign="top">
+    <td width="10%">
+    	<table width="100%" border="0">
+        <tr>
+        	<td colspan="2">Select State:</td>
+        </tr>
+        <tr>
+        	<td colspan="2">            
+            <select id="state" size="7" style="width:200px" onChange="setState(this.value);">
+            	<option value="Victoria" selected>Victoria</option>
+                <option value="Northern Territory">Northern Territory</option>
+                <option value="New South Wales">New South Wales</option>
+                <option value="South Australia">South Australia</option>
+                <option value="Tasmania">Tasmania</option>
+                <option value="Western Australia">Western Australia</option>
+                 <option value="Queensland">Queensland</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+        	<td colspan="2">&nbsp;</td>
+        </tr>
+        <tr>
+        	<td><input type="button" id="btnShowTable" value="Show Table" onClick="requestTransform(state.options[state.selectedIndex].value)"/></td>
+            <td><input type="button" id="btnShowStation" value="Show All Station" onClick="requestTransAndGetStations(state.options[state.selectedIndex].value)"/></td>
+        </tr>
+        </table>
+    </td>
+    
+    <td width="90%">  
+    	<table width="100%">
+        <tr>
+        	<td><div id="map" style="width:100%; height:300px; display:block"></div></td>
+        </tr>
+        <tr>
+        <td id="xsltContent"></td>
+        </tr>
+        </table>          
+           
+    </td>
+    </tr>
+    </table>
+   
+  </body>
+</html>
